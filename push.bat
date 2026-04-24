@@ -3,7 +3,7 @@ cd /d "%~dp0"
 
 :: ── Hide Mobirise promo footer ────────────────────────────────────────────────
 echo Hiding Mobirise promo footer...
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0hide-mobirise-promo-after-export.ps1.ps1" -SiteRoot "%~dp0"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0hide_promo.ps1" -SiteRoot "%~dp0"
 if errorlevel 1 (
   echo [ERROR] Footer script failed. Aborting.
   pause
